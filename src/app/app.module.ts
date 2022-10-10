@@ -3,6 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+// Para trabalhar com formulários no Angular 12
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+
+// Para realizar requisições HTTP
+import { HttpClientModule } from '@angular/common/http';
+
+// Imports para componentes do Angular Material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -26,6 +34,12 @@ import { MatCardModule } from '@angular/material/card';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+     // Forms
+     FormsModule,
+     ReactiveFormsModule,
+     // Requisições http
+     HttpClientModule,
+     // Angular Material
     MatFormFieldModule,
     MatPaginatorModule,
     MatCheckboxModule,
