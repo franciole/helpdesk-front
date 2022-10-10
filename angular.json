@@ -9,6 +9,11 @@
     "helpdesk": {
       "projectType": "application",
       "schematics": {
+        "@schematics/angular:component": {
+          "inlineTemplate": false,
+          "inlineStyle": false,
+          "skipTests": true
+        },
         "@schematics/angular:application": {
           "strict": true
         }
