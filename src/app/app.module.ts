@@ -31,13 +31,15 @@ import { NavComponent } from './component/nav/nav.component';
 import { HomeComponent } from './component/home/home.component';
 import { HeaderComponent } from './component/header/header.component';
 import { TecnicoListComponent } from './component/tecnico/tecnico-list/tecnico-list.component';
+import { LoginComponent } from './component/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     HomeComponent,
     HeaderComponent,
-    TecnicoListComponent
+    TecnicoListComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
