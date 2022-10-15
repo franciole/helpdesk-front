@@ -5,6 +5,7 @@ import { HomeComponent } from './component/home/home.component';
 import { TecnicoListComponent } from './component/tecnico/tecnico-list/tecnico-list.component';
 import { LoginComponent } from './component/login/login.component';
 import { AuthGuard } from './auth/auth.guard';
+import { TecnicoCreateComponent } from './component/tecnico/tecnico-create/tecnico-create.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
       {
         path: 'tecnicos',
         component: TecnicoListComponent,
+      },
+      {
+        path: 'tecnicos/create',
+        component: TecnicoCreateComponent,
       },
     ],
   },
