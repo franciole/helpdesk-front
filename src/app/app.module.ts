@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 // Para trabalhar com formulários no Angular 12
-import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // Para realizar requisições HTTP
 import { HttpClientModule } from '@angular/common/http';
@@ -33,6 +33,7 @@ import { HomeComponent } from './component/home/home.component';
 import { HeaderComponent } from './component/header/header.component';
 import { TecnicoListComponent } from './component/tecnico/tecnico-list/tecnico-list.component';
 import { LoginComponent } from './component/login/login.component';
+import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,18 +41,18 @@ import { LoginComponent } from './component/login/login.component';
     HomeComponent,
     HeaderComponent,
     TecnicoListComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-     // Forms
-     FormsModule,
-     ReactiveFormsModule,
-     // Requisições http
-     HttpClientModule,
-     // Angular Material
+    // Forms
+    FormsModule,
+    ReactiveFormsModule,
+    // Requisições http
+    HttpClientModule,
+    // Angular Material
     MatFormFieldModule,
     MatPaginatorModule,
     MatCheckboxModule,
@@ -69,10 +70,10 @@ import { LoginComponent } from './component/login/login.component';
     ToastrModule.forRoot({
       timeOut: 4000,
       closeButton: true,
-      progressBar: true
-    })
+      progressBar: true,
+    }),
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [AuthInterceptorProvider],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
