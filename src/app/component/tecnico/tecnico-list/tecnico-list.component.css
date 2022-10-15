@@ -3,8 +3,21 @@
   margin: auto;
 }
 
-table {
-  width: 100%;
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  border: 1px solid rgb(161, 159, 159);
+  padding: 1rem 10%;
+  border-radius: 2rem;
+
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(37, 97, 207, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 mat-form-field {
@@ -16,8 +29,19 @@ button {
   height: 2.5rem;
 }
 
-h1 {
+table {
   width: 100%;
-  text-align: center;
-  margin-bottom: 2rem;
+}
+
+td.mat-cell:hover {
+  color: white;
+}
+
+tr.mat-row:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(37, 97, 207, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
