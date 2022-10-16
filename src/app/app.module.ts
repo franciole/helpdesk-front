@@ -38,17 +38,25 @@ import { TecnicoCreateComponent } from './component/tecnico/tecnico-create/tecni
 import { NgxMaskModule } from 'ngx-mask';
 import { TecnicoUpdateComponent } from './component/tecnico/tecnico-update/tecnico-update.component';
 import { TecnicoDeleteComponent } from './component/tecnico/tecnico-delete/tecnico-delete.component';
+import { ClienteListComponent } from './component/cliente/cliente-list/cliente-list.component';
+import { ClienteCreateComponent } from './component/cliente/cliente-create/cliente-create.component';
+import { ClienteUpdateComponent } from './component/cliente/cliente-update/cliente-update.component';
+import { ClienteDeleteComponent } from './component/cliente/cliente-delete/cliente-delete.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     HomeComponent,
     HeaderComponent,
-    TecnicoListComponent,
     LoginComponent,
+    TecnicoListComponent,
     TecnicoCreateComponent,
     TecnicoUpdateComponent,
     TecnicoDeleteComponent,
+    ClienteListComponent,
+    ClienteCreateComponent,
+    ClienteUpdateComponent,
+    ClienteDeleteComponent,
   ],
   imports: [
     BrowserModule,
@@ -79,7 +87,7 @@ import { TecnicoDeleteComponent } from './component/tecnico/tecnico-delete/tecni
       closeButton: true,
       progressBar: true,
     }),
-    NgxMaskModule.forRoot()
+    NgxMaskModule.forRoot(),
   ],
   providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent],

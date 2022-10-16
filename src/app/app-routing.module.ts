@@ -8,6 +8,10 @@ import { AuthGuard } from './auth/auth.guard';
 import { TecnicoCreateComponent } from './component/tecnico/tecnico-create/tecnico-create.component';
 import { TecnicoUpdateComponent } from './component/tecnico/tecnico-update/tecnico-update.component';
 import { TecnicoDeleteComponent } from './component/tecnico/tecnico-delete/tecnico-delete.component';
+import { ClienteListComponent } from './component/cliente/cliente-list/cliente-list.component';
+import { ClienteCreateComponent } from './component/cliente/cliente-create/cliente-create.component';
+import { ClienteUpdateComponent } from './component/cliente/cliente-update/cliente-update.component';
+import { ClienteDeleteComponent } from './component/cliente/cliente-delete/cliente-delete.component';
 
 const routes: Routes = [
   {
@@ -19,26 +23,17 @@ const routes: Routes = [
     component: NavComponent,
     canActivate: [AuthGuard],
     children: [
-      {
-        path: 'home',
-        component: HomeComponent,
-      },
-      {
-        path: 'tecnicos',
-        component: TecnicoListComponent,
-      },
-      {
-        path: 'tecnicos/create',
-        component: TecnicoCreateComponent,
-      },
-      {
-        path: 'tecnicos/update/:id',
-        component: TecnicoUpdateComponent,
-      },
-      {
-        path: 'tecnicos/delete/:id',
-        component: TecnicoDeleteComponent,
-      },
+      { path: 'home', component: HomeComponent, },
+
+      { path: 'tecnicos', component: TecnicoListComponent, },
+      { path: 'tecnicos/create', component: TecnicoCreateComponent, },
+      { path: 'tecnicos/update/:id', component: TecnicoUpdateComponent, },
+      { path: 'tecnicos/delete/:id', component: TecnicoDeleteComponent, },
+
+      { path: 'clientes', component: ClienteListComponent, },
+      { path: 'clientes/create', component: ClienteCreateComponent, },
+      { path: 'clientes/update/:id', component: ClienteUpdateComponent, },
+      { path: 'clientes/delete/:id', component: ClienteDeleteComponent, },
     ],
   },
 ];
