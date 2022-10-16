@@ -45,3 +45,11 @@ tr.mat-row:hover {
     rgba(0, 212, 255, 1) 100%
   );
 }
+
+.edit {
+  color: rgba(0, 212, 255, 1);
+}
+
+.delete {
+  color: red;
+}
