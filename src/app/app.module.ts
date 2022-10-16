@@ -36,6 +36,7 @@ import { LoginComponent } from './component/login/login.component';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { TecnicoCreateComponent } from './component/tecnico/tecnico-create/tecnico-create.component';
 import { NgxMaskModule } from 'ngx-mask';
+import { TecnicoUpdateComponent } from './component/tecnico/tecnico-update/tecnico-update.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +46,7 @@ import { NgxMaskModule } from 'ngx-mask';
     TecnicoListComponent,
     LoginComponent,
     TecnicoCreateComponent,
+    TecnicoUpdateComponent,
   ],
   imports: [
     BrowserModule,
