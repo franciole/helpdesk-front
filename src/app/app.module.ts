@@ -35,6 +35,7 @@ import { TecnicoListComponent } from './component/tecnico/tecnico-list/tecnico-l
 import { LoginComponent } from './component/login/login.component';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { TecnicoCreateComponent } from './component/tecnico/tecnico-create/tecnico-create.component';
+import { NgxMaskModule } from 'ngx-mask';
 @NgModule({
   declarations: [
     AppComponent,
@@ -74,6 +75,7 @@ import { TecnicoCreateComponent } from './component/tecnico/tecnico-create/tecni
       closeButton: true,
       progressBar: true,
     }),
+    NgxMaskModule.forRoot()
   ],
   providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent],
