@@ -59,3 +59,15 @@ mat-radio-group {
   justify-content: space-around;
   margin-bottom: 1.5rem;
 }
+
+.vermelho {
+  color: red;
+}
+
+.amarelo {
+  color: yellow;
+}
+
+.verde {
+  color: green;
+}
