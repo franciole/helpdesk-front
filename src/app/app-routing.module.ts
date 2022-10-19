@@ -1,18 +1,22 @@
-import { ChamadoListComponent } from './component/chamado/chamado-list/chamado-list.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NavComponent } from './component/nav/nav.component';
 import { HomeComponent } from './component/home/home.component';
-import { TecnicoListComponent } from './component/tecnico/tecnico-list/tecnico-list.component';
 import { LoginComponent } from './component/login/login.component';
 import { AuthGuard } from './auth/auth.guard';
+
+import { TecnicoListComponent } from './component/tecnico/tecnico-list/tecnico-list.component';
 import { TecnicoCreateComponent } from './component/tecnico/tecnico-create/tecnico-create.component';
 import { TecnicoUpdateComponent } from './component/tecnico/tecnico-update/tecnico-update.component';
 import { TecnicoDeleteComponent } from './component/tecnico/tecnico-delete/tecnico-delete.component';
+
 import { ClienteListComponent } from './component/cliente/cliente-list/cliente-list.component';
 import { ClienteCreateComponent } from './component/cliente/cliente-create/cliente-create.component';
 import { ClienteUpdateComponent } from './component/cliente/cliente-update/cliente-update.component';
 import { ClienteDeleteComponent } from './component/cliente/cliente-delete/cliente-delete.component';
+
+import { ChamadoListComponent } from './component/chamado/chamado-list/chamado-list.component';
+import { ChamadoCreateComponent } from './component/chamado/chamado-create/chamado-create.component';
 
 const routes: Routes = [
   {
@@ -36,7 +40,8 @@ const routes: Routes = [
       { path: 'clientes/update/:id', component: ClienteUpdateComponent, },
       { path: 'clientes/delete/:id', component: ClienteDeleteComponent, },
 
-      { path: 'chamados', component: ChamadoListComponent}
+      { path: 'chamados', component: ChamadoListComponent},
+      { path: 'chamados/create', component: ChamadoCreateComponent}
     ],
   },
 ];
