@@ -38,3 +38,7 @@ button {
   margin-top: 1.5rem;
   height: 2.5rem;
 }
+
+mat-icon {
+  opacity: 0.6;
+}
