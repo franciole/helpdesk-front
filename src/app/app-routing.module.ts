@@ -1,4 +1,4 @@
-import { ChamadoUpdateComponent } from './component/chamado-update/chamado-update.component';
+import { ChamadoUpdateComponent } from './component/chamado/chamado-update/chamado-update.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NavComponent } from './component/nav/nav.component';
